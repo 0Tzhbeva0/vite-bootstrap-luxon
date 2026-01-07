@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap + Luxon (Vite)</title>
+  </head>
+  <body>
+    <main class="container app-main">
+      <div class="row">
+        <div class="col-2"></div>
+
+        <div class="col-8">
+          <button id="showTimeBtn" type="button" class="btn btn-success btn-lg app-btn">
+            Показать время
+          </button>
+        </div>
+
+        <div class="col-2"></div>
+      </div>
+    </main>
+
+    <div
+      class="modal fade"
+      id="timeModal"
+      tabindex="-1"
+      aria-labelledby="timeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="timeModalLabel">Выполнил: Ева Тажибаева</h1>
+            <button id="modalCloseX" type="button" class="btn-close" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="time" class="app-time"></div>
+          </div>
+          <div class="modal-footer">
+            <button id="modalCloseBtn" type="button" class="btn btn-secondary">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
